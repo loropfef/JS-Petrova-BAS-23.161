@@ -1,4 +1,4 @@
-let routeDistance = 78;
+let routeDistance = 78 * 1.6;
 let averageSpeed = 80;
-routeTime = averageSpeed / routeDistance;
+routeTime = routeDistance / averageSpeed 
 Math.round(routeTime);

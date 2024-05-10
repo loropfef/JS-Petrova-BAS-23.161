@@ -1,0 +1,47 @@
+let qualificationdistance = 200;
+let attempts = [120, 150, 160, 201, 203, 180, 202];
+let qualified = false;
+let averagebest = 0;
+attempts.sort((a, b) => b - a);
+let bestThree = attempts.slice(0, 3);
+let sum = bestThree.reduce((acc, val) => acc + val, 0);
+averagebest = sum / bestThree.length;
+qualified = averagebest > qualificationdistance ? true : false;
+console.log("qualified:", qualified);
+console.log("averagebest:", averagebest);
+                  2 ТЕСТ
+let qualificationdistance = 200;
+let attempts = [201,199,191,150];
+let qualified = false;
+let averagebest = 0;
+attempts.sort((a, b) => b - a);
+let bestThree = attempts.slice(0, 3);
+let sum = bestThree.reduce((acc, val) => acc + val, 0);
+averagebest = sum / bestThree.length;
+qualified = averagebest > qualificationdistance ? true : false;
+console.log("qualified:", qualified);
+console.log("averagebest:", averagebest);
+                  3 ТЕСТ
+let qualificationdistance = 200;
+let attempts = [220,220,220];
+let qualified = false;
+let averagebest = 0;
+attempts.sort((a, b) => b - a);
+let bestThree = attempts.slice(0, 3);
+let sum = bestThree.reduce((acc, val) => acc + val, 0);
+averagebest = sum / bestThree.length;
+qualified = averagebest > qualificationdistance ? true : false;
+console.log("qualified:", qualified);
+console.log("averagebest:", averagebest);
+                 4 ТЕСТ
+let qualificationdistance = 200;
+let attempts = [202,110,203,150,162,120];
+let qualified = false;
+let averagebest = 0;
+attempts.sort((a, b) => b - a);
+let bestThree = attempts.slice(0, 3);
+let sum = bestThree.reduce((acc, val) => acc + val, 0);
+averagebest = sum / bestThree.length;
+qualified = averagebest > qualificationdistance ? true : false;
+console.log("qualified:", qualified);
+console.log("averagebest:", averagebest);
